@@ -1,0 +1,1 @@
+GET-WMIOBJECT win32_diskdrive | Where-Object { $_.InterfaceType –eq ‘USB’ }

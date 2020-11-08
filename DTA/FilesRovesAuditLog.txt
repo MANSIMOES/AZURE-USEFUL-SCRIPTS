@@ -1,0 +1,26 @@
+Test01
+Executed on 
+Executed on  by mnova 197609
+Executed on 04 Oct 2020 08:18:55 by mnova 197609
+Executed on 04 Oct 2020 08:19:51 by User mnova with ID 197609.
+Executed on 04 Oct 2020 09:51:27 by User mnova with ID 197609.
+Executed on 04 Oct 2020 09:52:45 by User mnova with ID 197609.
+Executed on 04 Oct 2020 09:53:15 by User mnova with ID 197609.
+Executed on 04 Oct 2020 09:55:11 by User mnova with ID 197609.
+04 Oct 2020 10:21:05 : Started by User mnova with ID 197609.
+04 Oct 2020 10:22:12 : Started by User mnova with ID 197609.
+04 Oct 2020 10:24:52 : Started by User mnova with ID 197609.
+04 Oct 2020 10:25:33 : Started by User mnova with ID 197609.
+04 Oct 2020 10:25:33 : In-line command provided.
+04 Oct 2020 10:25:33 :DIR_A_SOURCE is /c/Users/mnova/source/repos/ProjectDat01.
+04 Oct 2020 10:25:34 :DIR_B_TARGET is /c/Users/mnova/source/repos/ProjectDat01.
+04 Oct 2020 10:25:34 :DIR_A_SOURCE is /c/Users/mnova/source/repos/ProjectDat01.
+04 Oct 2020 10:25:34 :DIR_B_TARGET is .
+04 Oct 2020 10:26:16 : Started by User mnova with ID 197609.
+04 Oct 2020 10:26:16 : In-line command provided.
+04 Oct 2020 10:26:16 :DIR_A_SOURCE is /c/Users/mnova/source/repos/ProjectDat01.
+04 Oct 2020 10:26:16 :DIR_A_SOURCE is /c/Users/mnova/source/repos/ProjectDat01.
+[04 Oct 2020 10:29:14 ]: Started by User mnova with ID 197609.
+[04 Oct 2020 10:29:14 ]: In-line command provided.
+[04 Oct 2020 10:29:14 ]: DIR_A_SOURCE is /c/Users/mnova/source/repos/ProjectDat01.
+[04 Oct 2020 10:29:14 ]: DIR_A_SOURCE is /c/Users/mnova/source/repos/ProjectDat01.

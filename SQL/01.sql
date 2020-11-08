@@ -1,0 +1,2 @@
+-- SQLite
+CREATE TABLE t(x INTEGER PRIMARY KEY ASC, y, z)

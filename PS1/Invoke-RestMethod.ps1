@@ -1,0 +1,1 @@
+invoke-RestMethod -Method GET -uri
