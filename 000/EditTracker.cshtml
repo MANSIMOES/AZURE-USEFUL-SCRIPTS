@@ -1,0 +1,177 @@
+@page
+@model GoOne06.Pages.EditTrackerModel
+@{
+    ViewData["Title"] = "Edit Tracker";
+}
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h2>Edit Tracker</h2>
+
+            <form method="post">
+                <input type="hidden" asp-for="Tracker.IdTrackerItem" />
+
+                <div class="form-group">
+                    <label for="TrackerSummary">Summary:</label>
+                    <textarea class="form-control" asp-for="Tracker.TrackerSummary"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="TrackerReminderPolicy">Reminder Policy:</label>
+                    <textarea class="form-control" asp-for="Tracker.TrackerReminderPolicy"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="TrackerEndDate">End Date:</label>
+                    <input type="date" class="form-control" asp-for="Tracker.TrackerEndDate" />
+                </div>
+
+                <div class="form-group">
+                    <label for="TrackerFirstRegistered">First Registered:</label>
+                    <input type="date" class="form-control" asp-for="Tracker.TrackerFirstRegistered" />
+                </div>
+
+                <div class="form-group">
+                    <label for="TrackerStatus">Status:</label>
+                    <input type="text" class="form-control" asp-for="Tracker.TrackerStatus" />
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Update Tracker</button>
+                </div>
+
+                <!-- Tracker Events Table -->
+                <h3 class="mt-5">Tracker Events</h3>
+                <table class="table table-bordered table-striped" style="color: white;">
+                    <thead>
+                        <tr>
+                            <th>
+                                <input type="checkbox" id="selectAll" />
+                            </th>
+                            <th>Event Date</th>
+                            <th>Description</th>
+                            <!-- Add other columns as needed -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model.TrackerEvents != null)
+                        {
+                            foreach (var event1 in Model.TrackerEvents)
+                            {
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="selectedTrackerEvents" value="@event1.IdTrackerEvent" />
+                                    </td>
+                                    <td style="color: white;" data-old-value="@event1.EventDate.ToShortDateString()">@event1.EventDate.ToShortDateString()</td>
+                                    <td style="color: white;" data-old-value="@event1.Description">@event1.Description</td>
+
+                                    <!-- Add other fields as needed -->
+                                </tr>
+                            }
+                        }
+                        else
+                        {
+                            <tr>
+                                <td colspan="2">No events found.</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+                <button type="button" class="btn btn-primary" onclick="return handleEditSelected();">Edit Selected</button>
+                <button type="button" class="btn btn-primary mt-2" onclick="return handleAddEvent();">Add Event</button>
+                <button type="button" class="btn btn-danger mt-2 ml-2" onclick="return handleDeleteSelected();">Delete Selected</button>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- ================== PAGE SPECIFIC SCRIPTS ================== -->
+@section Scripts {
+    <!-- External Libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+
+    <!-- Custom Scripts -->
+    <script>
+        // 'Select All' Checkbox Functionality
+        document.getElementById('selectAll').addEventListener('change', function () {
+            const checkboxes = document.getElementsByName('selectedTrackerEvents');
+            checkboxes.forEach(function (checkbox) {
+                checkbox.checked = document.getElementById('selectAll').checked;
+            });
+        });
+
+        // Edit Selected CheckBox Functionality
+        let editMode = false;
+        function handleEditSelected() {
+            const selectedCheckboxes = document.querySelectorAll('input[name="selectedTrackerEvents"]:checked');
+
+            if (selectedCheckboxes.length === 0) {
+                alert('Please select tracker events to edit.');
+                return false;
+            } else {
+                if (!editMode) {
+                    // Enable editing for all selected rows
+                    editMode = true;
+                    selectedCheckboxes.forEach(checkbox => {
+                        const selectedRow = checkbox.closest('tr');
+                        selectedRow.querySelectorAll('td').forEach((td, index) => {
+                            if (index > 0) { // Skip the checkbox column
+                                td.setAttribute('contenteditable', 'true');
+                                td.style.backgroundColor = 'white'; // Change background color for editable cells to white
+                                td.style.color = 'black'; // Change text color for editable cells to black
+                            }
+                        });
+                    });
+                } else {
+                    // Save changes for all selected rows
+                    editMode = false;
+                    selectedCheckboxes.forEach(checkbox => {
+                        const selectedRow = checkbox.closest('tr');
+                        selectedRow.querySelectorAll('td').forEach((td, index) => {
+                            if (index > 0) { // Skip the checkbox column
+                                td.removeAttribute('contenteditable');
+                                td.style.backgroundColor = ''; // Reset background color after editing
+                                td.style.color = 'white'; // Explicitly set text color back to white
+                                const oldValue = td.getAttribute('data-old-value');
+                                const newValue = td.textContent;
+
+                                if (oldValue !== newValue) {
+                                    updateDatabase(checkbox.value, index, newValue);
+                                    td.setAttribute('data-old-value', newValue);
+                                }
+                            }
+                        });
+                    });
+                }
+                return false;
+            }
+        }
+
+
+
+
+        function handleAddEvent() {
+            window.location.href = `/AddTrackerEvent`;
+            return false;
+        }
+
+        function handleDeleteSelected() {
+            const selectedCheckboxes = document.querySelectorAll('input[name="selectedTrackerEvents"]:checked');
+
+            if (selectedCheckboxes.length === 0) {
+                alert('Please select tracker events to delete.');
+                return false;
+            } else {
+                const idsToDelete = Array.from(selectedCheckboxes).map(checkbox => checkbox.value);
+                deleteFromDatabase(idsToDelete);
+                return false;
+            }
+        }
+
+
+    </script>
+
+}
