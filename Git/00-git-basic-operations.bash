@@ -57,3 +57,5 @@ git merge origin/main
 git branch -d feature/my-changes  # delete locally
 git push origin --delete feature/my-changes  # delete on remote
 
+# Push local branch to a new remote branch
+git push origin feature/my-changes:feature/my-changes

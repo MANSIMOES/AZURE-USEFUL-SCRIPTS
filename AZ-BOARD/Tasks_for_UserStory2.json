@@ -1,0 +1,110 @@
+[
+  {
+    "fields": {
+      "System.WorkItemType": "Task",
+      "System.Title": "Implement an inactivity timer on the client side that prompts the user before logging out due to inactivity.",
+      "System.Description": "",
+      "System.AssignedTo": "",
+      "System.Tags": ""
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Forward",
+        "url": "<URL to the User Story 2 work item>",
+        "attributes": {
+          "comment": "Link to User Story"
+        }
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.WorkItemType": "Task",
+      "System.Title": "Configure the server-side session to keep track of inactivity and end the session if the inactivity timer expires.",
+      "System.Description": "",
+      "System.AssignedTo": "",
+      "System.Tags": ""
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Forward",
+        "url": "<URL to the User Story 2 work item>",
+        "attributes": {
+          "comment": "Link to User Story"
+        }
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.WorkItemType": "Task",
+      "System.Title": "Set a fixed maximum session duration after which the user must re-authenticate, regardless of activity level.",
+      "System.Description": "",
+      "System.AssignedTo": "",
+      "System.Tags": ""
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Forward",
+        "url": "<URL to the User Story 2 work item>",
+        "attributes": {
+          "comment": "Link to User Story"
+        }
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.WorkItemType": "Task",
+      "System.Title": "Create a server-side mechanism to check and handle the session expiration based on inactivity or the maximum duration.",
+      "System.Description": "",
+      "System.AssignedTo": "",
+      "System.Tags": ""
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Forward",
+        "url": "<URL to the User Story 2 work item>",
+        "attributes": {
+          "comment": "Link to User Story"
+        }
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.WorkItemType": "Task",
+      "System.Title": "Update unit and integration tests to cover session timeout scenarios.",
+      "System.Description": "",
+      "System.AssignedTo": "",
+      "System.Tags": ""
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Forward",
+        "url": "<URL to the User Story 2 work item>",
+        "attributes": {
+          "comment": "Link to User Story"
+        }
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.WorkItemType": "Task",
+      "System.Title": "Update the documentation to reflect new timeout settings and behavior.",
+      "System.Description": "",
+      "System.AssignedTo": "",
+      "System.Tags": ""
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Forward",
+        "url": "<URL to the User Story 2 work item>",
+        "attributes": {
+          "comment": "Link to User Story"
+        }
+      }
+    ]
+  }
+]

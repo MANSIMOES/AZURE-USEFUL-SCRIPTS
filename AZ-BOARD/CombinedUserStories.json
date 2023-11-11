@@ -1,0 +1,74 @@
+[
+  [
+    {
+      "op": "add",
+      "path": "/fields/System.Title",
+      "value": "As a user, I want to log in to the web application so that I can access protected content."
+    },
+    {
+      "op": "add",
+      "path": "/relations/-",
+      "value": {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "https://dev.azure.com/mansimoes/6caf698e-4e40-42e2-9bc3-45b5659c2324/_apis/wit/workItems/18",
+        "attributes": {
+          "comment": "Link to Epic"
+        }
+      }
+    }
+  ],
+  [
+    {
+      "op": "add",
+      "path": "/fields/System.Title",
+      "value": "As a user, I want my login session to be secure and automatically timeout after a period of inactivity or after a maximum duration for enhanced security."
+    },
+    {
+      "op": "add",
+      "path": "/relations/-",
+      "value": {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "https://dev.azure.com/mansimoes/6caf698e-4e40-42e2-9bc3-45b5659c2324/_apis/wit/workItems/18",
+        "attributes": {
+          "comment": "Link to Epic"
+        }
+      }
+    }
+  ],
+  [
+    {
+      "op": "add",
+      "path": "/fields/System.Title",
+      "value": "As a security officer, I want the user session to be secure to prevent unauthorized access."
+    },
+    {
+      "op": "add",
+      "path": "/relations/-",
+      "value": {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "https://dev.azure.com/mansimoes/6caf698e-4e40-42e2-9bc3-45b5659c2324/_apis/wit/workItems/18",
+        "attributes": {
+          "comment": "Link to Epic"
+        }
+      }
+    }
+  ],
+  [
+    {
+      "op": "add",
+      "path": "/fields/System.Title",
+      "value": "As a user, I want to be able to log out from the web application so that I can ensure my session is not misused."
+    },
+    {
+      "op": "add",
+      "path": "/relations/-",
+      "value": {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "https://dev.azure.com/mansimoes/6caf698e-4e40-42e2-9bc3-45b5659c2324/_apis/wit/workItems/18",
+        "attributes": {
+          "comment": "Link to Epic"
+        }
+      }
+    }
+  ]
+]

@@ -1,0 +1,146 @@
+[
+  {
+    "fields": {
+      "System.WorkItemType": "Task",
+      "System.Title": "Design the login page layout with input fields for username and password.",
+      "System.Description": "",
+      "System.AssignedTo": "",
+      "System.Tags": ""
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Forward",
+        "url": "<URL to the User Story 1 work item>",
+        "attributes": {
+          "comment": "Link to User Story"
+        }
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.WorkItemType": "Task",
+      "System.Title": "Implement form validation for the login page.",
+      "System.Description": "",
+      "System.AssignedTo": "",
+      "System.Tags": ""
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Forward",
+        "url": "<URL to the User Story 1 work item>",
+        "attributes": {
+          "comment": "Link to User Story"
+        }
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.WorkItemType": "Task",
+      "System.Title": "Create the ASP.NET Identity models for user authentication.",
+      "System.Description": "",
+      "System.AssignedTo": "",
+      "System.Tags": ""
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Forward",
+        "url": "<URL to the User Story 1 work item>",
+        "attributes": {
+          "comment": "Link to User Story"
+        }
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.WorkItemType": "Task",
+      "System.Title": "Configure the ASP.NET Identity framework with the application.",
+      "System.Description": "",
+      "System.AssignedTo": "",
+      "System.Tags": ""
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Forward",
+        "url": "<URL to the User Story 1 work item>",
+        "attributes": {
+          "comment": "Link to User Story"
+        }
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.WorkItemType": "Task",
+      "System.Title": "Develop the login functionality in the AccountController.",
+      "System.Description": "",
+      "System.AssignedTo": "",
+      "System.Tags": ""
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Forward",
+        "url": "<URL to the User Story 1 work item>",
+        "attributes": {
+          "comment": "Link to User Story"
+        }
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.WorkItemType": "Task",
+      "System.Title": "Write unit tests for the login functionality.",
+      "System.Description": "",
+      "System.AssignedTo": "",
+      "System.Tags": ""
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Forward",
+        "url": "<URL to the User Story 1 work item>",
+        "attributes": {
+          "comment": "Link to User Story"
+        }
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.WorkItemType": "Task",
+      "System.Title": "Perform penetration testing for the login process.",
+      "System.Description": "",
+      "System.AssignedTo": "",
+      "System.Tags": ""
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Forward",
+        "url": "<URL to the User Story 1 work item>",
+        "attributes": {
+          "comment": "Link to User Story"
+        }
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.WorkItemType": "Task",
+      "System.Title": "Document the login flow and any related configuration.",
+      "System.Description": "",
+      "System.AssignedTo": "",
+      "System.Tags": ""
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Forward",
+        "url": "<URL to the User Story 1 work item>",
+        "attributes": {
+          "comment": "Link to User Story"
+        }
+      }
+    ]
+  }
+]

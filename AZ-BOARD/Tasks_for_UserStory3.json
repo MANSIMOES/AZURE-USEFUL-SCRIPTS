@@ -1,0 +1,92 @@
+[
+  {
+    "fields": {
+      "System.WorkItemType": "Task",
+      "System.Title": "Implement secure flag on authentication cookies.",
+      "System.Description": "",
+      "System.AssignedTo": "",
+      "System.Tags": ""
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Forward",
+        "url": "<URL to the User Story 3 work item>",
+        "attributes": {
+          "comment": "Link to User Story"
+        }
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.WorkItemType": "Task",
+      "System.Title": "Ensure the authentication cookie is HttpOnly.",
+      "System.Description": "",
+      "System.AssignedTo": "",
+      "System.Tags": ""
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Forward",
+        "url": "<URL to the User Story 3 work item>",
+        "attributes": {
+          "comment": "Link to User Story"
+        }
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.WorkItemType": "Task",
+      "System.Title": "Configure the cookie's SameSite attribute to prevent CSRF attacks.",
+      "System.Description": "",
+      "System.AssignedTo": "",
+      "System.Tags": ""
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Forward",
+        "url": "<URL to the User Story 3 work item>",
+        "attributes": {
+          "comment": "Link to User Story"
+        }
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.WorkItemType": "Task",
+      "System.Title": "Validate the security stamp regularly to confirm the integrity of the session.",
+      "System.Description": "",
+      "System.AssignedTo": "",
+      "System.Tags": ""
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Forward",
+        "url": "<URL to the User Story 3 work item>",
+        "attributes": {
+          "comment": "Link to User Story"
+        }
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.WorkItemType": "Task",
+      "System.Title": "Document security practices and configurations for session management.",
+      "System.Description": "",
+      "System.AssignedTo": "",
+      "System.Tags": ""
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Forward",
+        "url": "<URL to the User Story 3 work item>",
+        "attributes": {
+          "comment": "Link to User Story"
+        }
+      }
+    ]
+  }
+]
