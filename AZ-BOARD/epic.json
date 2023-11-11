@@ -1,0 +1,18 @@
+[
+    {
+      "op": "add",
+      "path": "/fields/System.WorkItemType",
+      "value": "Epic"
+    },
+    {
+      "op": "add",
+      "path": "/fields/System.Title",
+      "value": "Login and Security Epic"
+    },
+    {
+      "op": "add",
+      "path": "/fields/System.Description",
+      "value": "This epic encompasses all work related to user login and session security."
+    }
+  ]
+  

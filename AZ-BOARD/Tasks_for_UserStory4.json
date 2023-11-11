@@ -1,0 +1,74 @@
+[
+  {
+    "fields": {
+      "System.WorkItemType": "Task",
+      "System.Title": "Create a logout button on the user interface.",
+      "System.Description": "",
+      "System.AssignedTo": "",
+      "System.Tags": ""
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Forward",
+        "url": "<URL to the User Story 4 work item>",
+        "attributes": {
+          "comment": "Link to User Story"
+        }
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.WorkItemType": "Task",
+      "System.Title": "Implement the logout functionality that clears the session and cookies.",
+      "System.Description": "",
+      "System.AssignedTo": "",
+      "System.Tags": ""
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Forward",
+        "url": "<URL to the User Story 4 work item>",
+        "attributes": {
+          "comment": "Link to User Story"
+        }
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.WorkItemType": "Task",
+      "System.Title": "Test the logout functionality across different browsers.",
+      "System.Description": "",
+      "System.AssignedTo": "",
+      "System.Tags": ""
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Forward",
+        "url": "<URL to the User Story 4 work item>",
+        "attributes": {
+          "comment": "Link to User Story"
+        }
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.WorkItemType": "Task",
+      "System.Title": "Document the logout procedure and ensure compliance with security standards.",
+      "System.Description": "",
+      "System.AssignedTo": "",
+      "System.Tags": ""
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Forward",
+        "url": "<URL to the User Story 4 work item>",
+        "attributes": {
+          "comment": "Link to User Story"
+        }
+      }
+    ]
+  }
+]
