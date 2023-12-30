@@ -8,6 +8,15 @@ git config --global user.email "m.novaisimoes@gmail.com"
 # Clone the repository
 git clone https://mansimoes@dev.azure.com/mansimoes/eShopOnWeb/_git/eShopOnWeb
 
+# List branches
+git branch -a
+
+# List tag
+git tag
+
+# Change to tag
+git checkout tags/1.0.0
+
 # Commit and push
 git add .
 git commit -m "Initial commit"
